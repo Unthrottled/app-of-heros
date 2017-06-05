@@ -2,16 +2,16 @@ import {Component} from '@angular/core';
 import {Hero} from './hero';
 
 const HEROES: Hero[] = [
-    {id: 11, name: 'Mr. Nice'},
-    {id: 12, name: 'Narco'},
-    {id: 13, name: 'Bombasto'},
-    {id: 14, name: 'Celeritas'},
-    {id: 15, name: 'Magneta'},
-    {id: 16, name: 'RubberMan'},
-    {id: 17, name: 'Dynama'},
-    {id: 18, name: 'Dr IQ'},
-    {id: 19, name: 'Magma'},
-    {id: 20, name: 'Tornado'}
+    {id: 11, name: 'Mr. Cool'},
+    {id: 12, name: 'Elliot'},
+    {id: 13, name: 'Brandon'},
+    {id: 14, name: 'Jimbo'},
+    {id: 15, name: 'Mr. Higgs'},
+    {id: 16, name: 'Xavier'},
+    {id: 17, name: 'Elmer'},
+    {id: 18, name: 'Ms. P'},
+    {id: 19, name: 'Dan'},
+    {id: 20, name: 'Potatahs'}
 ];
 
 @Component({
@@ -21,7 +21,7 @@ const HEROES: Hero[] = [
         <h2>My Heroes</h2>
         <ul class="heroes">
             <li *ngFor="let hero of heroes"
-                [class.selected]="hero === hero"
+                [class.selected]="hero === selectedHero"
                 (click)="onSelect(hero)">
                 <span class="badge">{{hero.id}}</span> {{hero.name}}
             </li>
