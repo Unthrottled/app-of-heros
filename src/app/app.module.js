@@ -11,6 +11,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var hero_detail_component_1 = require("./hero-detail.component");
+var hero_service_1 = require("./hero.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,7 +27,8 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             hero_detail_component_1.HeroDetailComponent
         ],
-        bootstrap: [app_component_1.AppComponent]
+        bootstrap: [app_component_1.AppComponent],
+        providers: [hero_service_1.HeroService]
     })
 ], AppModule);
 exports.AppModule = AppModule;
